@@ -351,7 +351,7 @@ print("PLAI-YOLO was exported to ONNX successfully.")
 
 # Acknowledgement
 
-The codebase is built upon Ultralytics, and sunsmarterjie/yolov12: [https://github.com/THU-MIG/yolov10](https://github.com/sunsmarterjie/yolov12)
+The codebase is built upon Ultralytics, and sunsmarterjie/yolov12: https://github.com/sunsmarterjie/yolov12
 We sincerely thank their contribution to the object detection community.
 
 ---
