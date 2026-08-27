@@ -2,10 +2,10 @@
 
 # PLAI-YOLO
 
-### PLAI-YOLO: A Lightweight Framework for Efficient PCB Defect Detection
+### PLAI-YOLO: YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection
 
 <p align="center">
-  <img src="yolov10s_arch.png" width="90%"><br>
+  <img src="fig/fig1.png" width="90%"><br>
   <b>Overall Architecture of the Proposed PLAI-YOLO</b>
 </p>
 
