@@ -6,17 +6,21 @@
 
 <p align="center">
   <img src="fig/Fig1.png" width="85%"><br>
-  <b>Figure 1.</b> Overall architecture of the proposed YOLO-PLAI model
+  <sub><b>Figure 1.</b> Overall architecture of the proposed YOLO-PLAI model</sub>
 </p>
+
+<br>
 
 <p align="center">
   <img src="fig/Fig2.png" width="85%"><br>
-  <b>Figure 2.</b> The architecture of the MFAE module
+  <sub><b>Figure 2.</b> The architecture of the MFAE module</sub>
 </p>
+
+<br>
 
 <p align="center">
   <img src="fig/Fig4.png" width="85%"><br>
-  <b>Figure 3.</b> Qualitative comparison of detection results against four competing methods on the combined haze dataset
+  <sub><b>Figure 3.</b> Qualitative comparison of detection results against four competing methods on the combined haze dataset</sub>
 </p>
 
 </div>
