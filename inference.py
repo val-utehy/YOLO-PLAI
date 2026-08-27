@@ -10,8 +10,8 @@ from ultralytics import YOLO
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description='Run YOLOv10 inference')
-    p.add_argument('--weights', type=str, default='esc_yolo_best.pt')
+    p = argparse.ArgumentParser(description='Run YOLOv12 inference')
+    p.add_argument('--weights', type=str, default='best.pt')
     p.add_argument('--source', type=str, required=True, help='Path to image, folder, video, or glob pattern')
     p.add_argument('--imgsz', type=int, default=640)
     p.add_argument('--conf', type=float, default=0.25)
@@ -44,7 +44,7 @@ def main():
         sys.exit(1)
 
     print("=" * 65)
-    print("  YOLOv10-S — Inference")
+    print("  YOLOv12 — Inference")
     print("=" * 65)
     print(f"  Weights : {weights}")
     print(f"  Source  : {source}")
