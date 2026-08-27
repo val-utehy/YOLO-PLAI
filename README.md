@@ -124,12 +124,6 @@ python -c "import torch; print('PyTorch:', torch.__version__); print('CUDA avail
 
 ---
 
-# Validation on the TMVR-PCB Test Set
-
-PLAI-YOLO can be evaluated in two different ways.
-
----
-
 ## Option 1: Validation with the Python API
 
 The model can be evaluated directly through the Ultralytics Python interface:
@@ -145,7 +139,7 @@ import torch
 from ultralytics import YOLO
 
 
-weights_path = "ceve_yolo_best.pt"
+weights_path = "best.pt"
 data_path = "data_23_04_26.yaml"
 
 device = 0 if torch.cuda.is_available() else "cpu"
@@ -194,7 +188,7 @@ Example with custom parameters:
 
 ```bash
 python eval.py \
-  --weights ceve_yolo_best.pt \
+  --weights best.pt \
   --data path/to/data.yaml \
   --split test \
   --imgsz 640 800 \
@@ -214,7 +208,7 @@ python eval.py --imgsz 640 --no-tta
 
 | Argument | Default | Description |
 |---|---:|---|
-| `--weights` | `ceve_yolo_best.pt` | Path to the model checkpoint |
+| `--weights` | `best.pt` | Path to the model checkpoint |
 | `--data` | `data_23_04_26.yaml` | Path to the dataset YAML file |
 | `--split` | `test` | Dataset split: `train`, `val`, or `test` |
 | `--imgsz` | `640 800` | One or more evaluation image sizes |
@@ -245,7 +239,7 @@ import torch
 from ultralytics import YOLO
 
 
-weights_path = "ceve_yolo_best.pt"
+weights_path = "best.pt"
 source_path = "path/to/image_or_folder"
 
 device = 0 if torch.cuda.is_available() else "cpu"
@@ -296,8 +290,8 @@ Example with custom parameters:
 
 ```bash
 python inference.py \
-  --weights ceve_yolo_best.pt \
-  --source path/to/pcb_images \
+  --weights best.pt \
+  --source path/to/images \
   --imgsz 640 \
   --conf 0.25 \
   --iou 0.45 \
@@ -309,7 +303,7 @@ python inference.py \
 
 | Argument | Default | Description |
 |---|---:|---|
-| `--weights` | `ceve_yolo_best.pt` | Path to the model checkpoint |
+| `--weights` | `best.pt` | Path to the model checkpoint |
 | `--source` | Required | Path to an image, image directory, or video |
 | `--imgsz` | `640` | Input image size |
 | `--conf` | `0.25` | Confidence threshold |
@@ -342,7 +336,7 @@ import modules
 from ultralytics import YOLO
 
 
-model = YOLO("ceve_yolo_best.pt")
+model = YOLO("best.pt")
 
 model.export(
     format="onnx",
