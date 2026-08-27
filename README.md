@@ -140,7 +140,7 @@ from ultralytics import YOLO
 
 
 weights_path = "best.pt"
-data_path = "data_23_04_26.yaml"
+data_path = "data_haze.yaml"
 
 device = 0 if torch.cuda.is_available() else "cpu"
 
@@ -351,7 +351,7 @@ print("PLAI-YOLO was exported to ONNX successfully.")
 
 # Acknowledgement
 
-The codebase is built upon Ultralytics, and THU-MIG/yolov10: https://github.com/THU-MIG/yolov10
+The codebase is built upon Ultralytics, and sunsmarterjie/yolov12: [https://github.com/THU-MIG/yolov10](https://github.com/sunsmarterjie/yolov12)
 We sincerely thank their contribution to the object detection community.
 
 ---
