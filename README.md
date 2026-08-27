@@ -1,8 +1,8 @@
 <div align="center">
 
-# PLAI-YOLO
+# YOLO-PLAI
 
-### PLAI-YOLO: YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection 
+### YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection 
 
 <p align="center">
   <img src="fig/Fig1.png" width="85%"><br>
