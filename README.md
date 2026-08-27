@@ -31,7 +31,7 @@
 > [!IMPORTANT]
 > Python **3.11** is recommended for running this project.
 >
-> Using Python **3.11.x** helps ensure compatibility among PyTorch, Ultralytics, CUDA, and the custom PLAI-YOLO modules.
+> Using Python **3.11.x** helps ensure compatibility among PyTorch, Ultralytics, CUDA, and the custom YOLO-PLAI modules.
 
 ---
 
@@ -40,15 +40,15 @@
 ### Step 1: Create a Conda environment
 
 ```bash
-conda create -n PLAI-YOLO python=3.11 -y
-conda activate PLAI-YOLO
+conda create -n YOLO-PLAI python=3.11 -y
+conda activate YOLO-PLAI
 ```
 
 ### Step 2: Clone the repository
 
 ```bash
-git clone https://github.com/val-utehy/PLAI-YOLO.git
-cd PLAI-YOLO
+git clone https://github.com/val-utehy/YOLO-PLAI.git
+cd YOLO-PLAI
 ```
 
 > [!NOTE]
@@ -73,7 +73,7 @@ python3.11 --version
 ### Step 1: Create a virtual environment
 
 ```bash
-python3.11 -m venv PLAI-YOLO
+python3.11 -m venv YOLO-PLAI
 ```
 
 ### Step 2: Activate the environment
@@ -81,19 +81,19 @@ python3.11 -m venv PLAI-YOLO
 Linux or macOS:
 
 ```bash
-source PLAI-YOLO/bin/activate
+source YOLO-PLAI/bin/activate
 ```
 
 Windows Command Prompt:
 
 ```bash
-PLAI-YOLO\Scripts\activate
+YOLO-PLAI\Scripts\activate
 ```
 
 Windows PowerShell:
 
 ```powershell
-PLAI-YOLO\Scripts\Activate.ps1
+YOLO-PLAI\Scripts\Activate.ps1
 ```
 
 ### Step 3: Install Ultralytics
@@ -162,7 +162,7 @@ recall = float(metrics.box.mr)
 f1_score = 2 * precision * recall / (precision + recall + 1e-9)
 
 print("=" * 60)
-print("PLAI-YOLO Evaluation Results")
+print("YOLO-PLAI Evaluation Results")
 print("=" * 60)
 print(f"mAP@0.50:      {metrics.box.map50:.4f}")
 print(f"mAP@0.50:0.95: {metrics.box.map:.4f}")
@@ -172,7 +172,7 @@ print(f"F1-score:      {f1_score:.4f}")
 print("=" * 60)
 ```
 
-The `modules` package must be imported before loading the checkpoint so that the custom PLAI-YOLO components are registered correctly.
+The `modules` package must be imported before loading the checkpoint so that the custom YOLO-PLAI components are registered correctly.
 
 ---
 
@@ -222,7 +222,7 @@ python eval.py --imgsz 640 --no-tta
 
 # Inference
 
-PLAI-YOLO inference can also be executed through either the Python API or the provided command-line script.
+YOLO-PLAI inference can also be executed through either the Python API or the provided command-line script.
 
 ---
 
@@ -318,9 +318,9 @@ python inference.py \
 
 # Model Export
 
-The PLAI-YOLO checkpoint can be exported to several deployment formats through the Ultralytics export interface.
+The YOLO-PLAI checkpoint can be exported to several deployment formats through the Ultralytics export interface.
 
-Because PLAI-YOLO contains custom modules, the `modules` package must be imported before the checkpoint is loaded.
+Because YOLO-PLAI contains custom modules, the `modules` package must be imported before the checkpoint is loaded.
 
 ---
 
@@ -344,7 +344,7 @@ model.export(
     simplify=True
 )
 
-print("PLAI-YOLO was exported to ONNX successfully.")
+print("YOLO-PLAI was exported to ONNX successfully.")
 ```
 
 ---
