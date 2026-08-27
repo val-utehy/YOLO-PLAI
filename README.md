@@ -5,36 +5,23 @@
 ### PLAI-YOLO: YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection 
 
 <p align="center">
-  <img src="fig/Fig1.png" width="90%"><br>
-  <b> Overall architecture of the proposed YOLO-PLAI model</b>
+  <img src="fig/Fig1.png" width="85%"><br>
+  <b>Figure 1.</b> Overall architecture of the proposed YOLO-PLAI model
 </p>
 
 <p align="center">
-  <img src="fig/Fig2.png" width="70%"><br>
-  <b>The architecture of the MFAE module</b>
+  <img src="fig/Fig2.png" width="85%"><br>
+  <b>Figure 2.</b> The architecture of the MFAE module
 </p>
 
 <p align="center">
-  <img src="fig/Fig4.png" width="70%"><br>
-  <b>Qualitative comparison of detection results produced by our model against four competing methods on the combined haze dataset</b>
+  <img src="fig/Fig4.png" width="85%"><br>
+  <b>Figure 3.</b> Qualitative comparison of detection results against four competing methods on the combined haze dataset
 </p>
 
 </div>
 
 ---
-
-## Example of detection results
-
-<p align="center">
-  <img src="img_demo.png" width="90%" alt="Demo">
-</p>
-
-<p align="center">
-  <em>The overall architecture of the proposed PLAI-YOLO. Specifically, the CA, EC2f, V-CBAM, and ESCDown modules are highlighted in pink, red, green, and yellow blocks, respectively.</em>
-</p>
-
----
-
 # Installation
 
 > [!IMPORTANT]
