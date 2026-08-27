@@ -2,20 +2,20 @@
 
 # PLAI-YOLO
 
-### PLAI-YOLO: YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection
+### PLAI-YOLO: YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection 
 
 <p align="center">
-  <img src="fig/FIG1.png" width="90%"><br>
+  <img src="fig/Fig1.png" width="90%"><br>
   <b> Overall architecture of the proposed YOLO-PLAI model</b>
 </p>
 
 <p align="center">
-  <img src="FIG2.png" width="70%"><br>
+  <img src="fig/Fig2.png" width="70%"><br>
   <b>The architecture of the MFAE module</b>
 </p>
 
 <p align="center">
-  <img src="FIG4.png" width="70%"><br>
+  <img src="fig/Fig4.png" width="70%"><br>
   <b>Qualitative comparison of detection results produced by our model against four competing methods on the combined haze dataset</b>
 </p>
 
