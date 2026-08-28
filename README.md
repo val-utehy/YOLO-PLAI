@@ -2,7 +2,7 @@
 
 # YOLO-PLAI
 
-### YOLO-PLAI: An Enhanced YOLOv12 Framework for Power Line Autonomous Inspection 
+### YOLO-PLAI: A Robust Approach for Defect Detection on Power Transmission Lines under Adverse Weather Degradations
 
 <p align="center">
   <img src="fig/Fig1.png" width="85%"><br>
